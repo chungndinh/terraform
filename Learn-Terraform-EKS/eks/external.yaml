@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-y
+  namespace: staging
+spec:
+  type: ExternalName
+  externalName:  echoserver-2.staging-2.svc.cluster.local
+  ports:
+  - port: 8080
